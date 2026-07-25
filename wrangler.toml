@@ -1,0 +1,10 @@
+name = "tridelta-cookbook"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "dist"
+
+# Create this KV namespace (wrangler kv namespace create RECIPES_KV)
+# then add the id below and bind it in the Cloudflare Pages dashboard too:
+# Pages project > Settings > Functions > KV namespace bindings
+[[kv_namespaces]]
+binding = "RECIPES_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
